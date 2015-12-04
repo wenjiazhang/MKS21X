@@ -1,14 +1,12 @@
-git init
-git status
-git add
-git commit -m
-git log
-git remote add origin
-git push -u origin master
-git pull origin master
-git diff Head
-git reset
-git checkout --
-git branch
-git checkout
-git merge
+git init; initialize repository
+git status: check status
+git add: stage file
+git commit -m: add commit
+git log: see history
+git remote add origin: add reomote file
+git push -u origin master: push to master branch
+git pull origin master: pull from mater branch
+git diff Head: compare most recent commit
+git reset: removes staged file
+git checkout --: reverse to a certain file
+git branch: add branch
