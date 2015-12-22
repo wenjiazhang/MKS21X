@@ -63,7 +63,8 @@ public class BarCode implements Comparable{
 	    return true;
 	}
 	if (!(other instanceof BarCode) ||
-	    !this._zip.equals(((BarCode)other)._zip)){
+	    this._zip != ((BarCode)other)._zip ||
+	    this._checkDigit != ((BarCode)other)._checkDigit){
 	    return false;
 	}
 	return true;
