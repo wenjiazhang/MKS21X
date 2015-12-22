@@ -74,7 +74,20 @@ public class BarCode implements Comparable{
 
 
     public int compareTo(Object other){
-	return 0;
+	if (!(other instanceof BarCode)){
+	    throw new IllegalArgumentException();
+	}
+	if (equals(other)){
+	    return 0;
+	}
+	for (int i=0;i<5;i++){
+	    if (_zip.charAt(i)<((BarCode)other)._zip.charAt(i)){
+		return 1;
+	    }else if (_zip.charAt(i)>((BarCode)other)._zip.charAt(i)){
+		return -1;
+	    }
+	}
+	return -2;
 }
     // postcondition: compares the zip + checkdigit 
 

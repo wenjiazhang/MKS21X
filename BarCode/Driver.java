@@ -5,6 +5,8 @@ public class Driver{
     BarCode a = new BarCode("12345");
     BarCode b = new BarCode(a);
     System.out.println(b.toString());
+    System.out.println(a.equals(b));
+    System.out.println(a.compareTo(b));
     
     //System.out.println("Here come the errors!");
     
